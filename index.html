@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ID Travel Agent</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@800&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -18,13 +21,13 @@
       </section>
       <section class="title-header">
         <h1>Your best travel agent</h1>
-        <h4>Your happiness is our happiness</h4>
+        <h4>Your happiness is tes happiness</h4>
       </section>
     </header>
 
     <main id="main-section">
       <section class="review-section">
-        <img src="assets/bg.jpg" />
+        <img src="assets/danaukaco.jpeg" id="slider" />
         <h5>I like to go to this canyon using ID Travel Agent</h5>
       </section>
       <section class="message-us">
@@ -36,11 +39,25 @@
             type="text"
             id="name-input"
             placeholder="First and Last Name" />
+            <br>
           <label for="email-input">Email</label>
           <input type="text" id="email-input" placeholder="example@gmail.com" />
+          <br>
+          <label for="interests-dropdown">Apa yang Anda Sukai</label>
+<select id="interests-dropdown">
+  <option value="music">Musik</option>
+  <option value="movies">Film</option>
+  <option value="sports">Olahraga</option>
+  <option value="books">Buku</option>
+</select>
+
+
           <button type="button" class="primary-button">Submit</button>
         </form>
+        <h6 id="username"></h6>
       </section>
     </main>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
