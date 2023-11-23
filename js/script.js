@@ -1,4 +1,4 @@
-const submitButton = document.getElementsByClassName("primary-button"); // jangan pake class ntar kudu kasih urutan array
+const submitButton = document.getElementsByClassName("primary-button"); 
 const nameInput = document.getElementById("name-input");
 const emailInput = document.getElementById("email-input");
 const nameOutput = document.getElementById("username");
@@ -8,19 +8,15 @@ submitButton[0].addEventListener("click", function (event) {
   if (nameInput.value.length === 0 || emailInput.value.length === 0) {
     alert("nama atau email tidak boleh kosong");
   } else {
-    // ini buat ngasih peringatan dibawah form
     nameOutput.textContent = nameInput.value;
   }
 });
 
-// nameInput.addEventListener("input", function (event) {
-//   console.log(event);
-// });
 
-// bikin list image
-const images = ["assets/danaukaco.jpeg", "assets/khayanganbig.jpg", "assets/pancuranrayabig.jpg"];
 
-// fungsi penambahan i dan autoslider gambar
+const images = ["assets/danaukaco.jpeg", "assets/danaukerincibig.jpeg", "assets/pancuranrayabig.jpg"];
+
+
 var i = 0;
 function bannerSlide() {
   i += 1;
@@ -30,7 +26,7 @@ function bannerSlide() {
   imageSlider.src = images[i];
 }
 
-// otomasi run funsi bannerSlide
+
 setInterval(bannerSlide, 1000);
 
 console.log("cobain pull request");
